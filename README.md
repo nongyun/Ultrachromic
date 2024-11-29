@@ -18,48 +18,44 @@
 - 在移动设备上表现良好，紧凑对齐的用户界面
 - 对原生UI的各种微调和修复
 
-<br />
+## 如何使用
+要使用此主题，复制预设之一，或遵循创建自定义组合的说明，将其粘贴到“控制台>常规>自定义CSS”中并保存，它会立即全局应用于所有用户，叠加在他们正在使用的任何主题之上。要删除主题，请清除“自定义CSS”字段然后保存。
 
-<a href='https://ko-fi.com/mentaledge' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+在预设后添加模块可能会导致功能不正常，如果你尝试这样做而不起作用，请不要打开问题报告。要么使用预设，要么使用自定义组合，不要混用，因为这不是我要测试和保证其有效性的使用情况。
 
-# How to
-To use the theme copy paste one of the presets, or follow the instructions to create a custom combination, paste that into "Dashboard>General>Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save.
-
-**Adding modules after a preset may or may not work**, do not open an issue if you try to do things this way and it doesn't work. Either use a preset or a custom combination, not a mix of both, as that is not a use case I will be testing and guaranteeing to work.
-
-**NOTE: Theme may not work when using reverse proxy**, check the bottom section of this readme for more info.
+注意：通过反向代理使用时，主题可能无法正常工作，请查看此README底部获取更多信息。
 
 <br />
 
-## Single line presets
+## 单行预设
 
-These let you use Ultrachromic using a couple presets. These follow the same look as the old chromic themes.
+这些让你能通过几个预设来使用超级色彩，它们保持了旧的色彩主题的外观。
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/monochromic_preset.css');
 ```
-OR
+或者
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/kaleidochromic_preset.css');
 ```
-OR
+或者
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/novachromic_preset.css');
 ```
-Only one line is needed, nova and kaleido support custom accents.
+只需要一行代码，nova和kaleido支持自定义强调色。
 
 <br />
 <br />
 
-## Customization using multiple import lines
+## 多行导入实现自定义
 
-Ultrachromic is composed of multiple "parts" allowing you to theme only the parts you want, and to have some choice in how you want things themed. Simply add one import after another, in the order they are listed here. Simply omit the options you do not want to use.
+超级色彩由多个“部分”组成，允许你仅主题化你想要的部分，并对如何主题化有一定的选择。只需按照此处列出的顺序逐一添加导入。只需省略你不打算使用的部分。
 
 <br />
 
-### 1. Recommended
+### 1. 推荐
 
-fixes.css contains various small tweaks all over the JF UI, an alignment here, a size tweak there. That kind of thing. jf_font.css will make JF use the same font as its logo, for everything. You can use both, one, or none of these.
+fixes.css包含JF UI各处的一些小调整，如这里的对齐，那里的大小微调。jf_font.css会让JF使用与其标志相同的字体。你可以两者都用，只用一个，或都不用。
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fixes.css');
@@ -68,9 +64,9 @@ fixes.css contains various small tweaks all over the JF UI, an alignment here, a
 
 <br />
 
-### 2. Required
+### 2. 必需
 
-These lines are required.
+以下css为必需项
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/base.css');
@@ -79,25 +75,25 @@ These lines are required.
 
 <br />
 
-### 3. Rounding
+### 3. 圆角
 
-If you want to modify the rounding of corners in the UI, include one of these, circlehover keeps the stock circle accent when hovering over things, otherwise the accent will be a rounded square like everythig else.
+如果你想修改界面上的圆角，包括其中的一个，circlehover会在悬停时保持默认圆形高亮，否则高亮将是其他所有事物的圆角方形。
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding.css');
 ```
-OR
+或者
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding_circlehover.css');
 ```
 
 <br />
 
-### 4. Smaller cast list
+### 4. 更小的演员列表
 
 ![image](https://user-images.githubusercontent.com/4365015/127768495-3f211a57-3147-4b11-a9e0-5c9bdebc32b0.png)
 
-A smaller, square aspect ratio style cast list.
+较小的、正方形比例的演员列表样式。
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/smallercast.css');
@@ -105,27 +101,27 @@ A smaller, square aspect ratio style cast list.
 
 <br />
 
-### 5. Compact episode list
+### 5. 紧凑剧集列表
 
 ![image](https://user-images.githubusercontent.com/4365015/127768733-c86aee2c-3bff-4b78-be54-003823d60276.png)
 
-A more easily scrolled episode list, there is the option to keep it as a list that is more compact, or turning the episode list into a grid menu.
+更易于滚动的剧集列表，有保持紧凑列表或将其变为网格菜单的选项。
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_compactlist.css');
 ```
-OR
+或者
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_grid.css');
 ```
 
 <br />
 
-### 6. Transparent top bar
+### 6. 透明顶部栏
 
 ![image](https://user-images.githubusercontent.com/4365015/127768778-056a68eb-402f-49d0-8277-c11a71edbbe5.png)
 
-Transaparent top bar.
+透明顶部栏。
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent.css');
@@ -133,153 +129,151 @@ Transaparent top bar.
 
 <br />
 
-### 7. Login screen
+### 7. 登录界面
 
 ![image](https://user-images.githubusercontent.com/4365015/127768970-e827c7e4-f4ce-4229-a68a-b2e87a723ef0.png)
 
-Login screen styles. The minimalistic option has no frame or prompt text. You can also set a custom background, see further below.
+登录界面样式。极简主义选项没有边框或提示文字。你还可以设置自定义背景，见下文。
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_minimalistic.css');
 ```
-OR
+或者
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_frame.css');
 ```
 
 <br />
 
-### 8. Input fields
+### 8. 输入框
 
 ![image](https://user-images.githubusercontent.com/4365015/127769216-1d04cd30-14e0-4fda-9b2c-e0bfdb3514f6.png)
 
-Input field styles, with borders that highlight when selected, or with no borders, and the background highlights, when selected.
+输入框样式，具有选中时突出显示的边框，或无边框，以及选中时背景高亮。
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_border.css');
 ```
-OR
+或者
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_noborder.css');
 ```
 
 <br />
 
-### 9. Watched/Unwatched indicators
+### 9. 观看/未观看指示器
 
 ![image](https://user-images.githubusercontent.com/4365015/127769354-f7a0c402-0c9a-4a8e-a347-e6c352ecabbf.png)
 
-Two options, should the indicator be floating, or attached to the corner of the title card.
+两种选项，指示器浮动还是附加到标题卡片的角落。
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_floating.css');
 ```
-OR
+或者
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css');
 ```
 
 <br />
 
-### 10. Choose type
+### 10. 类型选择
 
 ![Untitled](https://user-images.githubusercontent.com/4365015/127774204-03957527-7178-4ea2-8674-d83fe6a97d1c.png)
 
-Dark, light, and colorful type. You must use one of these. If you wish to use an accent color with the dark style, use the "_withaccent" line.
+深色、浅色和多彩类型。你必须选用其中之一。如果你想在深色模式下使用强调色，请使用带有"_withaccent"的行。
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/dark.css');
 ```
-OR
+或者
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/light.css');
 ```
-OR
+或者
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/colorful.css');
 ```
-OR
+或者
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/dark_withaccent.css');
 ```
 
 <br />
 
-### 11. Title page
+### 11. 封面详情页
 
 ![image](https://user-images.githubusercontent.com/4365015/127778994-ddee8235-6bb2-42ae-a8b1-f9023dc69398.png)
 
 
-Four options, two versions, each version can be used with or without a logo replacing title text.
-
+提供四种样式选择，每种都有带logo和不带logo两个版本。
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_simple.css');
 ```
-OR
+或者
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_simple-logo.css');
 ```
-OR
+或者
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_banner.css');
 ```
-OR
+或者
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_banner-logo.css');
 ```
 
 <br />
 
-### 12. Progress bar
+### 12. 已观看进度条
 
 ![Screenshot_20210817_003507](https://user-images.githubusercontent.com/4365015/129632467-b545bcfc-3dbe-430d-8d3c-e89355eae29e.png)
 
-Default, overlay or floating style progress indicator for library items.
+针对观看进度记录提供的默认、覆盖或浮动式进度指示器。
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/overlayprogress.css');
 ```
-OR
+或者
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/bottombarprogress.css');
 ```
-OR
+或者
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/progress/floating.css');
 ```
 
-
 <br />
 
-### 13. Effects
+### 13. 动画效果（可多选）
 
 ![image](https://user-images.githubusercontent.com/4365015/127781073-c2a2a1f1-4c60-4c57-afa9-13a4775489bb.png)
 
-Additional eye candy. Make items glow on hover, make some UI elements glassy see-through. Pan animation animates the backdrop with a slow pan. The last one is a hacky way to turn the cover art into a backdrop on mobile, as it was removed in 10.7.0.
+额外的视觉美化功能。鼠标悬停时让元素发光，使某些界面元素呈现透明玻璃质感。平移动画以缓慢的移动方式动态展示背景。最后一个选项是一种在移动设备上将封面上变为背景的快捷方法，因为此功能在10.7.0中被移除。
 
-Known issues: Pan-animation can cause flickering on chromium based browsers when the backdrop is also modified.
+已知问题：当背景也修改时，平移动画可能导致基于Chromium的浏览器闪烁。
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/hoverglow.css');
 ```
-AND/OR
+或者/和
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/glassy.css');
 ```
-AND/OR
+或者/和
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/pan-animation.css');
 ```
-AND/OR
+或者/和
 ```css
 @import url('https://ctalvio.github.io/Monochromic/backdrop-hack_style.css');
 ```
 
 <br />
 
-### 14. Manual options
+### 14. 手动配置
 
-There are some manual options you can define if you want, after the import lines add this short snippet of code, you can edit it to set anything you want as a login background, or modify how blurry or dark/light your backdrops are, as well as to set a custom accent color.
+如有需要，您可以在导入行之后添加以下简短代码片段，可以编辑它来设置登录背景，调整背景模糊程度，以及自定义强调色。
 
 ```css
 /*Style backdrop*/
@@ -295,30 +289,30 @@ There are some manual options you can define if you want, after the import lines
 
 <br />
 
-### Extras
+### 额外资源
 
-[Check out these custom icons by @prayag17!](https://github.com/prayag17/Jellyfin-Icons)
+[查看 @prayag17 制作的自定义图标！](https://github.com/prayag17/Jellyfin-Icons)
 
-Also a general thanks to prayag17, I've joinked some code from him for this project. (grid episodes, title logo)
+还要特别感谢 prayag17，我在这个项目中加入了他的部分代码。（网格剧集、标题logo）
 
 <br />
 <br />
 
 ### Fix for use with some reverse proxy setups
 
-When using the Nginx Reverse proxy config from the [Jellyfin docs](https://jellyfin.org/docs/general/networking/nginx.html) the theme will not work by default. (If you are using the subpath config, you can ignore this.)
+使用来自 [Jellyfin docs](https://jellyfin.org/docs/general/networking/nginx.html) 的Nginx反向代理配置时，默认情况下主题无法正常工作。（如果您使用的是子路径配置，可忽略此部分）
 
-Because the config includes Content-Security-Policy which reduces risk of XSS, you need to add the URL's from this repo and the fonts to the list of allowed external sources.
+由于配置包含Content-Security-Policy以降低XSS风险，因此需要将本仓库中的URL和字体添加到允许的外部源列表中。
 
-In the nginx config you should change the
+在nginx配置文件中，应将
 
 ```
 add_header Content-Security-Policy ....
 ```
-to:
+改为
 
 ```
 add_header Content-Security-Policy "default-src https: data: blob:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/accentlist.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/base.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/bottombarprogress.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fixes.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/jf_font.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/overlayprogress.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding_circlehover.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/smallercast.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding_circlehover.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_floating.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/glassy.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/pan-animation.css https://ctalvio.github.io/Monochromic/backdrop-hack_style.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/hoverglow.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/scrollfade.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_compactlist.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_grid.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_border.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_noborder.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent-dashboard.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_frame.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_minimalistic.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_frame.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/monochromic_preset.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/kaleidochromic_preset.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/novachromic_preset.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_banner.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_banner-logo.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_simple.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_simple-logo.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/light.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/dark.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/colorful.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/dark_withaccent.css https://fonts.googleapis.com/css2; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'";
 ```
 
-If you don't do this the theme will simply not load (reverts back to default theme) and the browser console will spit out an error. Even if you paste in all the CSS, the font will still not load since it is loaded from an external source.
+如果不这样做，主题将不会加载（恢复为默认主题），浏览器控制台会显示错误。即使您复制了所有CSS，由于字体是从外部源加载的，仍然无法加载。
