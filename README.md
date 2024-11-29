@@ -1,8 +1,7 @@
-# Ultrachromic
+#超级色彩
+这是色彩主题传奇的最终形态，真正的进化！旧的三部曲色彩主题已不再使用，因为它们的效果可以通过超级色彩来复现。
 
-The final form, the true evolution of the chromic theme saga! The old trilogy of chromic themes are deprecated, as their appearances can be replicated using Ultrachromic.
-
-This is a custom theme for Jellyfin mediaserver created using CSS overrides. Note that I maintain this theme to be compatible with whatever version of Jellyfin I am currently using. Which is usually the latest stable release. You can therefore assume that using the theme on older versions may not work, but also that if a new release breaks something, that I will fix it. If you encounter unthemed elements or something broken, open an issue.
+这是一个针对Jellyfin媒体服务器定制的CSS覆盖主题。请注意，我维护这个主题以确保与我当前使用的Jellyfin版本兼容，通常是最新稳定版。所以你可以假设在旧版本上使用此主题可能无法正常工作，但同时，如果新版本破坏了某些功能，我会修复它。如果你发现未主题化元素或有故障，请报告问题。
 
 ![Untitled](https://user-images.githubusercontent.com/4365015/127774204-03957527-7178-4ea2-8674-d83fe6a97d1c.png)
 
