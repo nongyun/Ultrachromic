@@ -1,4 +1,4 @@
-#超级色彩
+## 超级色彩
 这是色彩主题传奇的最终形态，真正的进化！旧的三部曲色彩主题已不再使用，因为它们的效果可以通过超级色彩来复现。
 
 这是一个针对Jellyfin媒体服务器定制的CSS覆盖主题。请注意，我维护这个主题以确保与我当前使用的Jellyfin版本兼容，通常是最新稳定版。所以你可以假设在旧版本上使用此主题可能无法正常工作，但同时，如果新版本破坏了某些功能，我会修复它。如果你发现未主题化元素或有故障，请报告问题。
@@ -7,16 +7,16 @@
 
 <br />
 
-## Features
-- Themes **EVERYTHING**
-- Three types of styles to choose from
-- Extensive additional options
-- Customizable accent color
-- Choose how blurry you want your backdrops
-- Squared or rounded UI
-- Options for progress bars, title pages, backdrops, logos...
-- Works well on mobile, more compact and aligned UI
-- Various small tweaks and fixes to the stock UI
+## 功能
+- 主题化所有内容
+- 三种样式可选
+- 广泛的附加选项
+- 可自定义强调色
+- 自定义背景模糊程度
+- 方形或圆角界面
+- 进度条、封面页、背景、标识等选项
+- 在移动设备上表现良好，紧凑对齐的用户界面
+- 对原生UI的各种微调和修复
 
 <br />
 
